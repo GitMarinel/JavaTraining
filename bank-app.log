@@ -1,0 +1,46 @@
+2026-01-16 16:20:37.808 [main] INFO  p.c.bpi.oop.m4_activity8.BankAccount - Deposit requested: ₱5000.0
+2026-01-16 16:20:37.817 [main] INFO  p.c.bpi.oop.m4_activity8.BankAccount - Deposit completed: ₱5000.0, New balance: ₱15000.0
+2026-01-16 16:20:37.817 [main] INFO  p.c.bpi.oop.m4_activity8.BankAccount - Withdrawal requested: ₱3000.0
+2026-01-16 16:20:37.817 [main] INFO  p.c.bpi.oop.m4_activity8.BankAccount - Withdrawal completed: ₱3000.0, New balance: ₱12000.0
+2026-01-16 16:20:37.817 [main] INFO  p.c.bpi.oop.m4_activity8.BankAccount - Deposit requested: ₱-500.0
+2026-01-16 16:20:37.817 [main] ERROR p.c.bpi.oop.m4_activity8.BankAccount - Invalid deposit amount: ₱-500.0
+2026-01-16 16:20:37.817 [main] ERROR p.c.bpi.oop.m4_activity8.BankAccount - {} failed: Deposit amount must be positive
+ph.com.bpi.oop.m4_activity8.InvalidAmountException: Deposit amount must be positive
+	at Hello_World/ph.com.bpi.oop.m4_activity8.BankAccount.deposit(BankAccount.java:38)
+	at Hello_World/ph.com.bpi.oop.m4_activity8.Main.lambda$2(Main.java:13)
+	at Hello_World/ph.com.bpi.oop.m4_activity8.BankAccount.runTest(BankAccount.java:53)
+	at Hello_World/ph.com.bpi.oop.m4_activity8.Main.main(Main.java:13)
+2026-01-16 16:20:37.822 [main] INFO  p.c.bpi.oop.m4_activity8.BankAccount - Withdrawal requested: ₱20000.0
+2026-01-16 16:20:37.822 [main] WARN  p.c.bpi.oop.m4_activity8.BankAccount - Insufficient funds: ₱12000.0 available
+2026-01-16 16:20:37.822 [main] ERROR p.c.bpi.oop.m4_activity8.BankAccount - {} failed: Insufficient funds for withdrawal
+ph.com.bpi.oop.m4_activity8.InsufficientFundsException: Insufficient funds for withdrawal
+	at Hello_World/ph.com.bpi.oop.m4_activity8.BankAccount.withdraw(BankAccount.java:26)
+	at Hello_World/ph.com.bpi.oop.m4_activity8.Main.lambda$3(Main.java:15)
+	at Hello_World/ph.com.bpi.oop.m4_activity8.BankAccount.runTest(BankAccount.java:53)
+	at Hello_World/ph.com.bpi.oop.m4_activity8.Main.main(Main.java:15)
+2026-01-16 16:20:37.827 [main] INFO  p.c.bpi.oop.m4_activity8.BankAccount - Deposit requested: ₱60000.0
+2026-01-16 16:20:37.827 [main] WARN  p.c.bpi.oop.m4_activity8.BankAccount - Large deposit: ₱60000.0 - requires verification
+2026-01-16 16:20:37.827 [main] INFO  p.c.bpi.oop.m4_activity8.BankAccount - Deposit completed: ₱60000.0, New balance: ₱72000.0
+2026-01-16 16:21:04.895 [main] INFO  p.c.bpi.oop.m4_activity8.BankAccount - Deposit requested: ₱5000.0
+2026-01-16 16:21:04.901 [main] INFO  p.c.bpi.oop.m4_activity8.BankAccount - Deposit completed: ₱5000.0, New balance: ₱15000.0
+2026-01-16 16:21:04.902 [main] INFO  p.c.bpi.oop.m4_activity8.BankAccount - Withdrawal requested: ₱3000.0
+2026-01-16 16:21:04.904 [main] INFO  p.c.bpi.oop.m4_activity8.BankAccount - Withdrawal completed: ₱3000.0, New balance: ₱12000.0
+2026-01-16 16:21:04.906 [main] INFO  p.c.bpi.oop.m4_activity8.BankAccount - Deposit requested: ₱-500.0
+2026-01-16 16:21:04.906 [main] ERROR p.c.bpi.oop.m4_activity8.BankAccount - Invalid deposit amount: ₱-500.0
+2026-01-16 16:21:04.907 [main] ERROR p.c.bpi.oop.m4_activity8.BankAccount - {} failed: Deposit amount must be positive
+ph.com.bpi.oop.m4_activity8.InvalidAmountException: Deposit amount must be positive
+	at Hello_World/ph.com.bpi.oop.m4_activity8.BankAccount.deposit(BankAccount.java:38)
+	at Hello_World/ph.com.bpi.oop.m4_activity8.Main.lambda$2(Main.java:13)
+	at Hello_World/ph.com.bpi.oop.m4_activity8.BankAccount.runTest(BankAccount.java:53)
+	at Hello_World/ph.com.bpi.oop.m4_activity8.Main.main(Main.java:13)
+2026-01-16 16:21:04.913 [main] INFO  p.c.bpi.oop.m4_activity8.BankAccount - Withdrawal requested: ₱20000.0
+2026-01-16 16:21:04.914 [main] WARN  p.c.bpi.oop.m4_activity8.BankAccount - Insufficient funds: ₱12000.0 available
+2026-01-16 16:21:04.915 [main] ERROR p.c.bpi.oop.m4_activity8.BankAccount - {} failed: Insufficient funds for withdrawal
+ph.com.bpi.oop.m4_activity8.InsufficientFundsException: Insufficient funds for withdrawal
+	at Hello_World/ph.com.bpi.oop.m4_activity8.BankAccount.withdraw(BankAccount.java:26)
+	at Hello_World/ph.com.bpi.oop.m4_activity8.Main.lambda$3(Main.java:15)
+	at Hello_World/ph.com.bpi.oop.m4_activity8.BankAccount.runTest(BankAccount.java:53)
+	at Hello_World/ph.com.bpi.oop.m4_activity8.Main.main(Main.java:15)
+2026-01-16 16:21:04.917 [main] INFO  p.c.bpi.oop.m4_activity8.BankAccount - Deposit requested: ₱60000.0
+2026-01-16 16:21:04.917 [main] WARN  p.c.bpi.oop.m4_activity8.BankAccount - Large deposit: ₱60000.0 - requires verification
+2026-01-16 16:21:04.917 [main] INFO  p.c.bpi.oop.m4_activity8.BankAccount - Deposit completed: ₱60000.0, New balance: ₱72000.0

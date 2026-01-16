@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+    <!-- Optional: print internal Logback status to the console at startup -->
+    <statusListener class="ch.qos.logback.core.status.OnConsoleStatusListener" />
+
+    <!-- ========= Console Appender ========= -->
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <!-- You can tweak the pattern as you like -->
+            <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+            <charset>UTF-8</charset>
+        </encoder>
+    </appender>
+
+    <!-- ========= Daily Rolling File Appender ========= -->
+    <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <!-- Current log file -->
+        <file>logs/bank-app.log</file>
+
+        <!-- Rollover policy: one file per day -->
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <!-- Daily archive filename -->
+            <fileNamePattern>logs/bank-app-%d{yyyy-MM-dd}.log</fileNamePattern>
+
+            <!-- Keep 30 days -->
+            <maxHistory>30</maxHistory>
+
+            <!-- Cap total archived size to 1GB -->
+            <totalSizeCap>1GB</totalSizeCap>
+        </rollingPolicy>
+
+        <!-- ✅ The missing piece: an encoder -->
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+            <charset>UTF-8</charset>
+        </encoder>
+
+        <!-- optional, defaults are fine -->
+        <append>true</append>
+        <immediateFlush>true</immediateFlush>
+    </appender>
+
+    <!-- ========= Root Logger ========= -->
+    <root level="INFO">
+        <appender-ref ref="CONSOLE" />
+        <appender-ref ref="FILE" />
+    </root>
+
+</configuration>
