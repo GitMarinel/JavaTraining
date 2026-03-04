@@ -21,6 +21,7 @@ public class M8Application {
 		
 		service.startLog();
 		
+		
 		// Get Singleton Beans
         SingletonService s1 = context.getBean(SingletonService.class);
         SingletonService s2 = context.getBean(SingletonService.class);

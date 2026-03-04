@@ -23,6 +23,8 @@ import org.springframework.http.ResponseEntity;
 import com.example.demo.model.Book;
 import com.example.demo.model.BookDTO;
 
+import jakarta.validation.Valid;
+
 @RestController
 @RequestMapping("/api/books")
 public class BookController {
@@ -83,7 +85,7 @@ public class BookController {
                         .body("Book with id " + id + " not found."));
     }
     
-
+    
 
 
 }
